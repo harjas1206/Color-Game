@@ -16,6 +16,9 @@ easyButton.addEventListener("click",function(){
     easyButton.classList.add("selected");
     hardButton.classList.remove("selected");
     numSquares=3; 
+    h1.style.background="steelblue";
+    messageDisplay.textContent="";
+    resetButton.textContent="New Colors";
     colors=generateRandomColors(numSquares);
     pickedColor=pickColor();
     colorDisplay.textContent=pickedColor;
@@ -33,6 +36,9 @@ hardButton.addEventListener("click",function(){
     hardButton.classList.add("selected");
     easyButton.classList.remove("selected");
     numSquares=6;
+    h1.style.background="steelblue";
+    messageDisplay.textContent="";
+    resetButton.textContent="New Colors";
     colors=generateRandomColors(numSquares);
     pickedColor=pickColor();
     colorDisplay.textContent=pickedColor;
